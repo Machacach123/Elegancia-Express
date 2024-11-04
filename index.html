@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #9fa09b; /* Verde */
+    color: rgb(17, 8, 8);
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: rgb(8, 3, 3);
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    color: rgb(17, 6, 6); /* Texto blanco para contraste */
+}
+
+/* Colores para cada sección */
+#home {
+    background: #a2cbec; /* Azul */
+}
+
+#shop {
+    background: #e4c392; /* Naranja */
+}
+
+#about {
+    background: #dcade4; /* Morado */
+}
+
+#contact {
+    background: #bb8c88; /* Rojo */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #4CAF50; /* Verde */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+    <header>
+        <h1>Elegancia Express</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#shop">Tienda</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#contact">Contactos</a></li>
+            </ul>
+        </nav>
+
+        <div class="cart">
+            <button id="cart-button">🛒 Carrito (<span id="cart-count">0</span>)</button>
+            
+
+
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Inicio</h2>
+            <p>Bienvenido a nuestra tienda de ropa, donde encontrarás las últimas tendencias y estilos.</p>
+        
+            <img src="logo Elegancia Express.png" alt="Logo de la Tienda" class="logo">
+            <img src="images.png" alt="Logo de la Tienda" class="logo">
+            <img src="6.png" alt="Logo de la Tienda" class="logo">
+            <img src="7.png" alt="Logo de la Tienda" class="logo">
+            
+            <p>Información:
+
+                Recuerda que puedes comprar con cualquier medio de pago; tarjeta de crédito, debito o con transferencia bancaria y depósito.</p>
+
+                <p>Aquí para ayudarte:
+
+                    Encuentra los detalles del proceso de compra leyendo nuestros términos y condiciones, una guía rápida para una compra segura.</p>
+
+                    <p>Delivery:
+
+                        Estimados clientes de provincias les informamos que sus pedidos serán enviados a DOMICILIO por la agencia OLVA.</p>
+
+                        <p>Nuestras redes:
+
+                            Síguenos para enterarte de todas las novedades y promos que tenemos especialmente para ti.</p>
+
+
+        </section>
+
+        <section id="shop">
+            <h2>Tienda</h2>
+            <p>Explora nuestra colección de ropa para todas las ocasiones. ¡Descubre lo que tenemos para ti!</p>
+            
+            <img src="1.PNG" alt="Logo de la Tienda" class="logo">
+            <img src="5.PNG" alt="Logo de la Tienda" class="logo">
+            <img src="20.1.png" alt="Logo de la Tienda" class="logo">
+            <img src="15.1.png" alt="Logo de la Tienda" class="logo">
+            <img src="11.1.png" alt="Logo de la Tienda" class="logo">
+            <img src="12.1.png" alt="Logo de la Tienda" class="logo">
+            <img src="18.webp" alt="Logo de la Tienda" class="logo">
+            <img src="20.1.png" alt="Logo de la Tienda" class="logo">
+            <img src="13.avif" alt="Logo de la Tienda" class="logo">
+            <img src="21.jpg" alt="Logo de la Tienda" class="logo">
+
+<div class="product">
+        <h3>Camisa de Algodón</h3>
+        <p>
+            Camisa de algodón suave y transpirable, diseñada para brindar comodidad durante todo el día. Con un corte clásico y detalles cuidadosamente acabados, es ideal tanto para looks casuales como formales. Su material de alta calidad garantiza frescura y durabilidad, convirtiéndola en una prenda esencial en cualquier guardarropa.</p>
+        <button onclick="
+<script>
+            let cartCount = 0;
+        
+            function addToCart(productName) {
+                cartCount++;
+                document.getElementById('cart-count').innerText = cartCount;
+                alert(productName + ' ha sido agregado al carrito!'); // Mensaje de confirmación)">Agregar al carrito</button>
+    </div>
+    <div class="product">
+        <h3>Pantalones Jeans</h3>
+        <p>
+            Pantalones jeans de corte moderno, confeccionados con denim resistente y ligeramente elástico para un ajuste cómodo y favorecedor. Su diseño versátil los convierte en la opción perfecta para cualquier ocasión, ya sea casual o semi-formal. Con acabados de calidad y detalles clásicos, estos jeans ofrecen estilo y durabilidad, adaptándose a cualquier tipo de look.</p>
+        <button onclick="addToCart()">Agregar al carrito</button>
+    </div>
+    <div class="product">
+        <h3>Chaqueta de Cuero</h3>
+        <p>Chaqueta de cuero auténtico de estilo atemporal, diseñada para ofrecer un look audaz y elegante. Su corte ajustado resalta la silueta, mientras que los detalles como los cierres metálicos y las costuras reforzadas aportan un toque moderno. Ideal para cualquier temporada, esta chaqueta combina estilo y durabilidad, siendo una prenda versátil que complementa desde atuendos casuales hasta conjuntos más sofisticados.</p>
+        <button onclick="addToCart()">Agregar al carrito</button>
+
+            <!-- Aquí podrías añadir imágenes de productos o enlaces a categorías -->
+        </section>
+
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una marca de moda creada en Juliaca para chicas y chicos que buscan las últimas tendencias a precios asequibles y con diseños originales y favorecedores.
+
+                Nuestro compromiso es ayudarte a encontrar esas prendas que te hagan sentir seguro/a, auténtico/a y siempre a la moda. Ya sea para una ocasión especial o para el día a día, en Elegancia Express encontrarás una variedad de estilos para todos los gustos. Ven y descubre una colección que no solo se adapta a ti, sino que también resalta lo mejor de ti.</p>
+        
+                <p>Misión:
+
+                    En Elegancia Express, nuestra misión es ofrecer moda de alta calidad y estilo accesible para todos a través de una experiencia de compra virtual cómoda y segura. Nos enfocamos en satisfacer las necesidades de nuestros clientes, brindando una selección de prendas que reflejen su personalidad y estilo único, asegurando siempre un servicio excepcional.</p>
+                <p>Vision:
+
+                    Ser la tienda de ropa virtual preferida por quienes buscan elegancia y estilo en cada detalle, destacándonos por nuestra innovación en moda y compromiso con la satisfacción del cliente. Aspiramos a expandir nuestro alcance, convirtiéndonos en un referente en moda online en el mercado nacional y regional.</p>
+                <p>Valores:
+
+                    Calidad;
+                    Innovación;
+                    
+                    Orientación al cliente;
+                    
+                    Accesibilidad y 
+                    
+                    Responsabilidad</p>
+
+            </section>
+
+        <section id="contact">
+            <h2>Contactos</h2>
+            <p>Puedes contactarnos a través de nuestras redes TIKTOK; INSTAGRAM; FACEBOOK
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Ropa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
